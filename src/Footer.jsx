@@ -15,16 +15,13 @@ function Footer() {
           
           {/* Social Links section */}
           <Col md={6} className="social-links">
-            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/shrek-28" target="_blank" rel="noopener noreferrer" className="social-icon">
               <i className="fab fa-github"></i> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/shreyasree-g/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <i className="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="https://leetcode.com/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <i className="fab fa-leetcode"></i> LeetCode
-            </a>
-            <a href="https://www.hackerrank.com/your-username" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.hackerrank.com/profile/shreyagopal28" target="_blank" rel="noopener noreferrer" className="social-icon">
               <i className="fab fa-hackerrank"></i> Hackerrank
             </a>
             {/* Add more social links here */}
@@ -33,7 +30,7 @@ function Footer() {
         <Row>
           {/* Footer Copyright */}
           <Col md={12} className="text-center">
-            <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Shreyasree G. All rights reserved.</p>
           </Col>
         </Row>
       </Container>
