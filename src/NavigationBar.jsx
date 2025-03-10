@@ -66,7 +66,7 @@ function NavigationBar() {
             </NavDropdown> */}
 
             {/* Login Link */}
-            <Nav.Link as={Link} to="https://drive.google.com/drive/u/1/my-drive" className="rounded-link text-white">
+            <Nav.Link as={Link} to="https://drive.google.com/file/d/1PcBS36UGsmlWbA39a09HBVKLbny3ee51/view?usp=sharing" className="rounded-link text-white">
               Resume
             </Nav.Link>
           </Nav>
