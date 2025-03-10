@@ -1,0 +1,81 @@
+/* General styles for portfolio page */
+.portfolio-page {
+  background-color: #0a0a0a;
+}
+
+/* Header styling for skills */
+.skills-header {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.skills-main{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Grid styling for skill cards */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* Media Queries for responsive grid */
+@media (max-width: 1200px) {
+  .skills-grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 cards per row for large screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-grid {
+      grid-template-columns: 1fr; /* 1 card per row for very small screens */
+  }
+}
+
+/* Navbar styling for all screen sizes */
+.navbar {
+  background-color: black !important; /* Ensure background is black */
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+  color: white !important; /* Force white text color */
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #d3d3d3 !important; /* Hover effect */
+}
+
+/* Mobile toggle button */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

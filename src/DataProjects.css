@@ -1,0 +1,27 @@
+.data-projects-main {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .data-projects-header {
+    margin-bottom: 20px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+  }
+  
+  .data-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  @media (max-width: 1200px) {
+    .data-projects-grid {
+      grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+  }
+  

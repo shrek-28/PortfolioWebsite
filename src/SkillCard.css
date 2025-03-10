@@ -1,0 +1,90 @@
+/* Skill card styles */
+.skill-card {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+  border-radius: 12px; /* Slightly more rounded corners */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 220px; /* Slightly larger card size */
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #666363;
+}
+
+/* Hover effect */
+.skill-card:hover {
+  transform: translateY(-8px); /* Subtle lift effect */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: #666363; /* White background on hover */
+}
+
+/* Card content layout */
+.skill-card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Skill card image styles */
+.skill-card-image img {
+  width: 90px; /* Slightly larger image */
+  height: 90px;/* Subtle background for image area */
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on image */
+.skill-card:hover .skill-card-image img {
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+/* Text spacing and alignment */
+.card-info-wrapper {
+  margin-top: 15px; /* Better spacing between image and text */
+}
+
+/* Title styles */
+.card-info-title h4 {
+  font-size: 1.3rem; /* Slightly larger font */
+  text-align: center;
+  color: #FFF6E9; /* Dark gray for better readability */
+  font-weight: bold;
+}
+
+/* Add subtitle or description */
+.card-info-title p {
+  font-size: 0.9rem;
+  color: #FFF6E9; /* Medium gray for supporting text */
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skill-card {
+    max-width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+}
+
+/* Button styles inside card (optional) */
+.skill-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff; /* Primary color */
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.skill-card button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly larger button on hover */
+}

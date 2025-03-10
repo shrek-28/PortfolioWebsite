@@ -1,0 +1,95 @@
+/* Container for the course */
+.course-container {
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect on the course container */
+.course-container:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Content container for text + image */
+.course-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text container */
+.course-text {
+  flex: 1;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on the text */
+.course-container:hover .course-text {
+  color: #0073e6; /* Change text color on hover */
+}
+
+/* Heading styling */
+.course-heading {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+Hover effect on the heading
+.course-container:hover .course-heading {
+  color: #FFFFFF; /* Darker blue on hover */
+}
+
+/* Description styling */
+.course-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0;
+  transition: color 0.3s ease;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Hover effect on the description */
+.course-container:hover .course-description {
+  color: #FFFFFF; /* Darker text on hover */
+}
+
+/* Image container */
+.course-image-container {
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image styling */
+.course-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on the image */
+.course-container:hover .course-image {
+  transform: scale(1.1); /* Slight zoom on the image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}

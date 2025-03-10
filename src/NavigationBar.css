@@ -1,0 +1,92 @@
+/* Default navbar styles */
+.navbar {
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  background-color: black !important; /* Always black background */
+  color: white !important; /* White text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Navbar link styles */
+.navbar .nav-link {
+  color: white !important; /* White text for links */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ddd !important; /* Slightly lighter white on hover */
+}
+
+/* Optional: Adjust navbar text color */
+.navbar .text-white {
+  color: white !important; /* Ensure consistent white text */
+}
+
+/* Keep the rounded link styles */
+.rounded-link {
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: #007bff;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.rounded-link:hover {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Additional navbar styles */
+.left-align {
+  margin-left: 0px;
+  padding-right: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Style the last link as rounded */
+.navbar .nav {
+  justify-content: space-between;
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  border-radius: 5px; /* Rounded corners */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for dropdown items */
+.navbar .dropdown-item {
+  color: white !important; /* White text */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar .nav {
+    justify-content: flex-start; /* Align links to the left for smaller screens */
+  }
+  .rounded-link {
+    margin-top: 10px; /* Add spacing if stacked on smaller screens */
+  }
+}
+
+/* Fixes for link alignment */
+.navbar-collapse {
+  justify-content: space-between;
+}

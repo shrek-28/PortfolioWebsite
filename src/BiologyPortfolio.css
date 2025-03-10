@@ -1,0 +1,23 @@
+.bio-projects-main {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .bio-projects-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .bio-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  @media (max-width: 1200px) {
+    .bio-projects-grid {
+      grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+  }
+  
